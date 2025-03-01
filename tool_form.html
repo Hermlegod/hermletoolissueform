@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Report Form</title>
+    <style>
+        /* Mobile responsive styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6A6E6A;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #D3D3D3;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="Submit"] {
+            background-color: #CE2029;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 12px 20px;
+            border-radius: 4px;
+        }
+        input[type="Submit"]:hover {
+            background-color: #CE2029;
+        }
+        /* Make it responsive on mobile devices */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>HERMLE USA<br> <br><u>Tool Issue Submition Form</u><br><h2>
+        <form action="send_email.php" method="POST">
+            <label for="name">Technician Name</label><br>
+            <input type="text" id="name" name="tech name" required><br>
+			
+            <label for="customer">Customer Tool is Returning From</label><br>
+            <input type="customer" id="customer" name="customer" required><br>
+
+            <label for="toolname">Tool with Issue</label><br>
+            <input type="text" id="toolname" name="tool name" required><br>
+			
+            <label for="description">Description of Issue:</label><br>
+            <textarea id="description" name="description" rows="4" required></textarea><br>
+
+            <input type="submit" value="Send to HERMLE USA">
+        </form>
+    </div>
+</body>
+</html>
