@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+rn<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,18 +57,24 @@
 <body>
     <div class="container">
         <h2><img src="https://hermlegod.github.io/hermletoolissueform/thumbnail_image004.png" /></h2><img> 
-	    <h2><b><u>Tool Issue Submition Form</u></b><br></h2>
+	    <h2><b><u>Tool Return Form</u></b><br></h2>
         <form action="send_email.php" method="POST">
             <label for="name">Technician Name</label><br>
             <input type="text" id="name" name="tech name" required><br>
-			
-            <label for="customer">Customer Tool is Returning From</label><br>
+
+	    <label for="customer">Contact email for shipping lables:</label><br>
             <input type="customer" id="customer" name="customer" required><br>
 
-            <label for="toolname">Tool with Issue</label><br>
-            <input type="text" id="toolname" name="tool name" required><br>
+	    <label for="customer">Customer Tool is Returning From</label><br>
+            <input type="customer" id="customer" name="customer" required><br>
+
+	    <label for="customer">Address Tool is Returning From</label><br>
+            <input type="customer" id="customer" name="customer" required><br>
+
+            <label for="description">Weights and dimentions</label><br>
+            <textarea id="description" name="description" rows="4" required></textarea><br>
 			
-            <label for="description">Description of Issue:</label><br>
+            <label for="description">Any issues with tools</label><br>
             <textarea id="description" name="description" rows="4" required></textarea><br>
 
             <input type="submit" value="Send to HERMLE USA">
